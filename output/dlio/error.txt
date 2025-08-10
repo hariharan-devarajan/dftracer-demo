@@ -1,20 +1,20 @@
-[OUTPUT] 2025-08-10T01:25:37.317178 Profiling DLIO /usr/WS2/haridev/dftracer-demo/output/dlio/unet3d_a100//trace-0-of-2.pfw
-[OUTPUT] 2025-08-10T01:25:38.608391 Running DLIO [Generating data & Training & Checkpointing] with 2 process(es)
+[OUTPUT] 2025-08-10T01:39:41.223293 Profiling DLIO /usr/WS2/haridev/dftracer-demo/output/dlio/unet3d_a100//trace-0-of-2.pfw
+[OUTPUT] 2025-08-10T01:39:41.987229 Running DLIO [Generating data & Training & Checkpointing] with 2 process(es)
 [WARNING] The amount of dataset is smaller than the host memory; data might be cached after the first epoch. Increase the size of dataset to eliminate the caching effect!!!
-[OUTPUT] 2025-08-10T01:25:38.943118 Starting data generation
-[OUTPUT] 2025-08-10T01:25:58.449560 Generation done
+[OUTPUT] 2025-08-10T01:39:42.216166 Starting data generation
+[OUTPUT] 2025-08-10T01:40:01.534798 Generation done
 [WARNING] Running DLIO with 4 threads for I/O but core available 1 are insufficient and can lead to lower performance.
 [WARNING] Running DLIO with 4 threads for I/O but core available 1 are insufficient and can lead to lower performance.
-[OUTPUT] 2025-08-10T01:25:58.567083 Model size: 0.000010 GB 
-[OUTPUT] 2025-08-10T01:25:58.567147 Total checkpoint size: 0.000010 GB 
-[OUTPUT] 2025-08-10T01:25:58.568970 Max steps per epoch: 2 = 1 * 32 / 7 / 2 (samples per file * num files / batch size / comm size)
-[OUTPUT] 2025-08-10T01:25:58.611390 Starting epoch 1: 2 steps expected
-[OUTPUT] 2025-08-10T01:25:58.611610 Starting block 1
-[OUTPUT] 2025-08-10T01:26:08.394996 Ending block 1 - 2 steps completed in 9.78 s
-[OUTPUT] 2025-08-10T01:26:08.413413 Epoch 1 - Block 1 [Training] Accelerator Utilization [AU] (%): 29.9977
-[OUTPUT] 2025-08-10T01:26:08.413463 Epoch 1 - Block 1 [Training] Throughput (samples/second): 0.0000
-[OUTPUT] 2025-08-10T01:26:08.413490 Epoch 1 - Block 1 [Training] Computation time per step (second): 0.6362+/-0.0000 (set value: {'mean': 0.636})
-[OUTPUT] 2025-08-10T01:26:08.416025 Ending epoch 1 - 2 steps completed in 9.80 s
+[OUTPUT] 2025-08-10T01:40:01.648416 Model size: 0.000010 GB 
+[OUTPUT] 2025-08-10T01:40:01.648476 Total checkpoint size: 0.000010 GB 
+[OUTPUT] 2025-08-10T01:40:01.650235 Max steps per epoch: 2 = 1 * 32 / 7 / 2 (samples per file * num files / batch size / comm size)
+[OUTPUT] 2025-08-10T01:40:01.683862 Starting epoch 1: 2 steps expected
+[OUTPUT] 2025-08-10T01:40:01.684064 Starting block 1
+[OUTPUT] 2025-08-10T01:40:11.071567 Ending block 1 - 2 steps completed in 9.39 s
+[OUTPUT] 2025-08-10T01:40:11.084472 Epoch 1 - Block 1 [Training] Accelerator Utilization [AU] (%): 31.5542
+[OUTPUT] 2025-08-10T01:40:11.084529 Epoch 1 - Block 1 [Training] Throughput (samples/second): 0.0000
+[OUTPUT] 2025-08-10T01:40:11.084559 Epoch 1 - Block 1 [Training] Computation time per step (second): 0.6362+/-0.0000 (set value: {'mean': 0.636})
+[OUTPUT] 2025-08-10T01:40:11.087009 Ending epoch 1 - 2 steps completed in 9.40 s
 /usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3464: RuntimeWarning: Mean of empty slice.
   return _methods._mean(a, axis=axis, dtype=dtype,
 /usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/numpy/core/_methods.py:192: RuntimeWarning: invalid value encountered in scalar divide
@@ -25,14 +25,14 @@
   arrmean = um.true_divide(arrmean, div, out=arrmean,
 /usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/numpy/core/_methods.py:261: RuntimeWarning: invalid value encountered in scalar divide
   ret = ret.dtype.type(ret / rcount)
-[OUTPUT] 2025-08-10T01:26:08.428005 Saved outputs in /usr/WS2/haridev/dftracer-demo/output/dlio/unet3d_a100/
+[OUTPUT] 2025-08-10T01:40:11.098804 Saved outputs in /usr/WS2/haridev/dftracer-demo/output/dlio/unet3d_a100/
 [OUTPUT] Averaged metric over all steps/epochs
 [METRIC] ==========================================================
 [METRIC] Number of Simulated Accelerators: 2 
-[METRIC] Training Accelerator Utilization [AU] (%): 19.4081 (0.0000)
+[METRIC] Training Accelerator Utilization [AU] (%): 20.4420 (0.0000)
 [METRIC] Training Throughput (samples/second): 0.0000 (0.0000)
 [METRIC] Training I/O Throughput (MB/second): 0.0000 (0.0000)
 [METRIC] train_au_meet_expectation: fail
 [METRIC] ==========================================================
 
-[OUTPUT] 2025-08-10T01:26:08.435065 outputs saved in RANKID_output.json
+[OUTPUT] 2025-08-10T01:40:11.106010 outputs saved in RANKID_output.json
