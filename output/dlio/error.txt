@@ -1,63 +1,38 @@
-Traceback (most recent call last):
-  File "/usr/WS2/haridev/dftracer-demo/install/bin/dlio_benchmark", line 5, in <module>
-Traceback (most recent call last):
-  File "/usr/WS2/haridev/dftracer-demo/install/bin/dlio_benchmark", line 5, in <module>
-    from dlio_benchmark.main import main
-  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/dlio_benchmark/main.py", line 40, in <module>
-    from dlio_benchmark.main import main
-  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/dlio_benchmark/main.py", line 40, in <module>
-    from dlio_benchmark.utils.statscounter import StatsCounter
-  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/dlio_benchmark/utils/statscounter.py", line 31, in <module>
-    from dlio_benchmark.utils.statscounter import StatsCounter
-  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/dlio_benchmark/utils/statscounter.py", line 31, in <module>
-    from mpi4py import MPI
-    from mpi4py import MPI
-  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 1138, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 1138, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 1078, in _find_spec
-  File "<frozen importlib._bootstrap>", line 1078, in _find_spec
-  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/mpi4py/_mpiabi.py", line 290, in find_spec
-  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/mpi4py/_mpiabi.py", line 290, in find_spec
-    mpiabi_suffix = _get_mpiabi_suffix(fullname)
-    mpiabi_suffix = _get_mpiabi_suffix(fullname)
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/mpi4py/_mpiabi.py", line 276, in _get_mpiabi_suffix
-  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/mpi4py/_mpiabi.py", line 276, in _get_mpiabi_suffix
-    mpiabi = _get_mpiabi()
-             ^^^^^^^^^^^^^
-  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/mpi4py/_mpiabi.py", line 258, in _get_mpiabi
-    mpiabi = _get_mpiabi()
-             ^^^^^^^^^^^^^
-  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/mpi4py/_mpiabi.py", line 258, in _get_mpiabi
-    mpiabi = _get_mpiabi_from_libmpi(libmpi)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/mpi4py/_mpiabi.py", line 217, in _get_mpiabi_from_libmpi
-    mpiabi = _get_mpiabi_from_libmpi(libmpi)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    lib = _dlopen_libmpi(libmpi)
-  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/mpi4py/_mpiabi.py", line 217, in _get_mpiabi_from_libmpi
-          ^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/mpi4py/_mpiabi.py", line 210, in _dlopen_libmpi
-    lib = _dlopen_libmpi(libmpi)
-          ^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/mpi4py/_mpiabi.py", line 210, in _dlopen_libmpi
-    raise RuntimeError("\n".join(errors))
-RuntimeError: cannot load MPI library
-/usr/WS2/haridev/dftracer-demo/install/lib/libmpi.so: cannot open shared object file: No such file or directory
-/usr/WS2/haridev/dftracer-demo/install/lib/libmpi.so.12: cannot open shared object file: No such file or directory
-/usr/WS2/haridev/dftracer-demo/install/lib/libmpi.so.40: cannot open shared object file: No such file or directory
-libmpi.so: cannot open shared object file: No such file or directory
-libmpi.so.12: cannot open shared object file: No such file or directory
-libmpi.so.40: cannot open shared object file: No such file or directory
-    raise RuntimeError("\n".join(errors))
-RuntimeError: cannot load MPI library
-/usr/WS2/haridev/dftracer-demo/install/lib/libmpi.so: cannot open shared object file: No such file or directory
-/usr/WS2/haridev/dftracer-demo/install/lib/libmpi.so.12: cannot open shared object file: No such file or directory
-/usr/WS2/haridev/dftracer-demo/install/lib/libmpi.so.40: cannot open shared object file: No such file or directory
-libmpi.so: cannot open shared object file: No such file or directory
-libmpi.so.12: cannot open shared object file: No such file or directory
-libmpi.so.40: cannot open shared object file: No such file or directory
-flux-job: task(s) exited with exit code 1
+[OUTPUT] 2025-08-10T01:25:37.317178 Profiling DLIO /usr/WS2/haridev/dftracer-demo/output/dlio/unet3d_a100//trace-0-of-2.pfw
+[OUTPUT] 2025-08-10T01:25:38.608391 Running DLIO [Generating data & Training & Checkpointing] with 2 process(es)
+[WARNING] The amount of dataset is smaller than the host memory; data might be cached after the first epoch. Increase the size of dataset to eliminate the caching effect!!!
+[OUTPUT] 2025-08-10T01:25:38.943118 Starting data generation
+[OUTPUT] 2025-08-10T01:25:58.449560 Generation done
+[WARNING] Running DLIO with 4 threads for I/O but core available 1 are insufficient and can lead to lower performance.
+[WARNING] Running DLIO with 4 threads for I/O but core available 1 are insufficient and can lead to lower performance.
+[OUTPUT] 2025-08-10T01:25:58.567083 Model size: 0.000010 GB 
+[OUTPUT] 2025-08-10T01:25:58.567147 Total checkpoint size: 0.000010 GB 
+[OUTPUT] 2025-08-10T01:25:58.568970 Max steps per epoch: 2 = 1 * 32 / 7 / 2 (samples per file * num files / batch size / comm size)
+[OUTPUT] 2025-08-10T01:25:58.611390 Starting epoch 1: 2 steps expected
+[OUTPUT] 2025-08-10T01:25:58.611610 Starting block 1
+[OUTPUT] 2025-08-10T01:26:08.394996 Ending block 1 - 2 steps completed in 9.78 s
+[OUTPUT] 2025-08-10T01:26:08.413413 Epoch 1 - Block 1 [Training] Accelerator Utilization [AU] (%): 29.9977
+[OUTPUT] 2025-08-10T01:26:08.413463 Epoch 1 - Block 1 [Training] Throughput (samples/second): 0.0000
+[OUTPUT] 2025-08-10T01:26:08.413490 Epoch 1 - Block 1 [Training] Computation time per step (second): 0.6362+/-0.0000 (set value: {'mean': 0.636})
+[OUTPUT] 2025-08-10T01:26:08.416025 Ending epoch 1 - 2 steps completed in 9.80 s
+/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3464: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/numpy/core/_methods.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/numpy/core/_methods.py:269: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/numpy/core/_methods.py:226: RuntimeWarning: invalid value encountered in divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean,
+/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/numpy/core/_methods.py:261: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+[OUTPUT] 2025-08-10T01:26:08.428005 Saved outputs in /usr/WS2/haridev/dftracer-demo/output/dlio/unet3d_a100/
+[OUTPUT] Averaged metric over all steps/epochs
+[METRIC] ==========================================================
+[METRIC] Number of Simulated Accelerators: 2 
+[METRIC] Training Accelerator Utilization [AU] (%): 19.4081 (0.0000)
+[METRIC] Training Throughput (samples/second): 0.0000 (0.0000)
+[METRIC] Training I/O Throughput (MB/second): 0.0000 (0.0000)
+[METRIC] train_au_meet_expectation: fail
+[METRIC] ==========================================================
+
+[OUTPUT] 2025-08-10T01:26:08.435065 outputs saved in RANKID_output.json

@@ -210,3 +210,4 @@ __marimo__/
 # Install Files
 install
 *.core
+demo/dlio/outputs
