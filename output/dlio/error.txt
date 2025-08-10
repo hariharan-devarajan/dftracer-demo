@@ -1,0 +1,63 @@
+Traceback (most recent call last):
+  File "/usr/WS2/haridev/dftracer-demo/install/bin/dlio_benchmark", line 5, in <module>
+Traceback (most recent call last):
+  File "/usr/WS2/haridev/dftracer-demo/install/bin/dlio_benchmark", line 5, in <module>
+    from dlio_benchmark.main import main
+  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/dlio_benchmark/main.py", line 40, in <module>
+    from dlio_benchmark.main import main
+  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/dlio_benchmark/main.py", line 40, in <module>
+    from dlio_benchmark.utils.statscounter import StatsCounter
+  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/dlio_benchmark/utils/statscounter.py", line 31, in <module>
+    from dlio_benchmark.utils.statscounter import StatsCounter
+  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/dlio_benchmark/utils/statscounter.py", line 31, in <module>
+    from mpi4py import MPI
+    from mpi4py import MPI
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1138, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1138, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1078, in _find_spec
+  File "<frozen importlib._bootstrap>", line 1078, in _find_spec
+  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/mpi4py/_mpiabi.py", line 290, in find_spec
+  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/mpi4py/_mpiabi.py", line 290, in find_spec
+    mpiabi_suffix = _get_mpiabi_suffix(fullname)
+    mpiabi_suffix = _get_mpiabi_suffix(fullname)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/mpi4py/_mpiabi.py", line 276, in _get_mpiabi_suffix
+  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/mpi4py/_mpiabi.py", line 276, in _get_mpiabi_suffix
+    mpiabi = _get_mpiabi()
+             ^^^^^^^^^^^^^
+  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/mpi4py/_mpiabi.py", line 258, in _get_mpiabi
+    mpiabi = _get_mpiabi()
+             ^^^^^^^^^^^^^
+  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/mpi4py/_mpiabi.py", line 258, in _get_mpiabi
+    mpiabi = _get_mpiabi_from_libmpi(libmpi)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/mpi4py/_mpiabi.py", line 217, in _get_mpiabi_from_libmpi
+    mpiabi = _get_mpiabi_from_libmpi(libmpi)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    lib = _dlopen_libmpi(libmpi)
+  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/mpi4py/_mpiabi.py", line 217, in _get_mpiabi_from_libmpi
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/mpi4py/_mpiabi.py", line 210, in _dlopen_libmpi
+    lib = _dlopen_libmpi(libmpi)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/mpi4py/_mpiabi.py", line 210, in _dlopen_libmpi
+    raise RuntimeError("\n".join(errors))
+RuntimeError: cannot load MPI library
+/usr/WS2/haridev/dftracer-demo/install/lib/libmpi.so: cannot open shared object file: No such file or directory
+/usr/WS2/haridev/dftracer-demo/install/lib/libmpi.so.12: cannot open shared object file: No such file or directory
+/usr/WS2/haridev/dftracer-demo/install/lib/libmpi.so.40: cannot open shared object file: No such file or directory
+libmpi.so: cannot open shared object file: No such file or directory
+libmpi.so.12: cannot open shared object file: No such file or directory
+libmpi.so.40: cannot open shared object file: No such file or directory
+    raise RuntimeError("\n".join(errors))
+RuntimeError: cannot load MPI library
+/usr/WS2/haridev/dftracer-demo/install/lib/libmpi.so: cannot open shared object file: No such file or directory
+/usr/WS2/haridev/dftracer-demo/install/lib/libmpi.so.12: cannot open shared object file: No such file or directory
+/usr/WS2/haridev/dftracer-demo/install/lib/libmpi.so.40: cannot open shared object file: No such file or directory
+libmpi.so: cannot open shared object file: No such file or directory
+libmpi.so.12: cannot open shared object file: No such file or directory
+libmpi.so.40: cannot open shared object file: No such file or directory
+flux-job: task(s) exited with exit code 1
