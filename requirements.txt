@@ -1,4 +1,4 @@
 ./software/dlio_benchmark
 git+https://github.com/LLNL/dfanalyzer@feat/upgrade-zindex
-git+https://github.com/LLNL/dftracer.git@feature/zlib_compression
+git+https://github.com/LLNL/dftracer.git@feature/demo-env
 jupyter
