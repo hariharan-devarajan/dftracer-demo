@@ -211,3 +211,4 @@ __marimo__/
 install
 *.core
 demo/dlio/outputs
+demo/ior/outputs
