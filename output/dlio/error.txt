@@ -1,16 +1,16 @@
-[OUTPUT] 2025-08-14T12:22:09.319116 Profiling DLIO /usr/WS2/haridev/dftracer-demo/output/dlio/unet3d_a100//trace-0-of-1.pfw
-[OUTPUT] 2025-08-14T12:22:11.379053 Running DLIO [Training & Checkpointing] with 1 process(es)
+[OUTPUT] 2025-08-14T13:57:46.494923 Profiling DLIO /usr/WS2/haridev/dftracer-demo/output/dlio/unet3d_a100//trace-0-of-1.pfw
+[OUTPUT] 2025-08-14T13:57:47.476648 Running DLIO [Training & Checkpointing] with 1 process(es)
 [WARNING] The amount of dataset is smaller than the host memory; data might be cached after the first epoch. Increase the size of dataset to eliminate the caching effect!!!
-[OUTPUT] 2025-08-14T12:22:11.517224 Model size: 0.000010 GB 
-[OUTPUT] 2025-08-14T12:22:11.517473 Total checkpoint size: 0.000010 GB 
-[OUTPUT] 2025-08-14T12:22:11.518288 Max steps per epoch: 4 = 1 * 32 / 7 / 1 (samples per file * num files / batch size / comm size)
-[OUTPUT] 2025-08-14T12:22:11.570376 Starting epoch 1: 4 steps expected
-[OUTPUT] 2025-08-14T12:22:11.570849 Starting block 1
-[OUTPUT] 2025-08-14T12:22:24.794964 Ending block 1 - 4 steps completed in 13.22 s
-[OUTPUT] 2025-08-14T12:22:24.810138 Epoch 1 - Block 1 [Training] Accelerator Utilization [AU] (%): 32.6068
-[OUTPUT] 2025-08-14T12:22:24.810235 Epoch 1 - Block 1 [Training] Throughput (samples/second): 2.3895
-[OUTPUT] 2025-08-14T12:22:24.810286 Epoch 1 - Block 1 [Training] Computation time per step (second): 0.6368+/-0.0000 (set value: {'mean': 0.636})
-[OUTPUT] 2025-08-14T12:22:24.814153 Ending epoch 1 - 4 steps completed in 13.24 s
+[OUTPUT] 2025-08-14T13:57:47.956765 Model size: 0.000010 GB 
+[OUTPUT] 2025-08-14T13:57:47.956979 Total checkpoint size: 0.000010 GB 
+[OUTPUT] 2025-08-14T13:57:47.970325 Max steps per epoch: 4 = 1 * 32 / 7 / 1 (samples per file * num files / batch size / comm size)
+[OUTPUT] 2025-08-14T13:57:48.094995 Starting epoch 1: 4 steps expected
+[OUTPUT] 2025-08-14T13:57:48.095613 Starting block 1
+[OUTPUT] 2025-08-14T13:59:34.363564 Ending block 1 - 4 steps completed in 106.27 s
+[OUTPUT] 2025-08-14T13:59:34.378605 Epoch 1 - Block 1 [Training] Accelerator Utilization [AU] (%): 3.8992
+[OUTPUT] 2025-08-14T13:59:34.378691 Epoch 1 - Block 1 [Training] Throughput (samples/second): 0.2817
+[OUTPUT] 2025-08-14T13:59:34.378743 Epoch 1 - Block 1 [Training] Computation time per step (second): 0.6459+/-0.0001 (set value: {'mean': 0.636})
+[OUTPUT] 2025-08-14T13:59:34.390289 Ending epoch 1 - 4 steps completed in 106.30 s
 /usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3464: RuntimeWarning: Mean of empty slice.
   return _methods._mean(a, axis=axis, dtype=dtype,
 /usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/numpy/core/_methods.py:192: RuntimeWarning: invalid value encountered in scalar divide
@@ -21,14 +21,14 @@
   arrmean = um.true_divide(arrmean, div, out=arrmean,
 /usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/numpy/core/_methods.py:261: RuntimeWarning: invalid value encountered in scalar divide
   ret = ret.dtype.type(ret / rcount)
-[OUTPUT] 2025-08-14T12:22:24.825267 Saved outputs in /usr/WS2/haridev/dftracer-demo/output/dlio/unet3d_a100/
+[OUTPUT] 2025-08-14T13:59:34.434822 Saved outputs in /usr/WS2/haridev/dftracer-demo/output/dlio/unet3d_a100/
 [OUTPUT] Averaged metric over all steps/epochs
 [METRIC] ==========================================================
 [METRIC] Number of Simulated Accelerators: 1 
-[METRIC] Training Accelerator Utilization [AU] (%): 32.6068 (0.0000)
-[METRIC] Training Throughput (samples/second): 2.3895 (0.0000)
-[METRIC] Training I/O Throughput (MB/second): 2.3895 (0.0000)
+[METRIC] Training Accelerator Utilization [AU] (%): 3.8992 (0.0000)
+[METRIC] Training Throughput (samples/second): 0.2817 (0.0000)
+[METRIC] Training I/O Throughput (MB/second): 0.2817 (0.0000)
 [METRIC] train_au_meet_expectation: fail
 [METRIC] ==========================================================
 
-[OUTPUT] 2025-08-14T12:22:24.839433 outputs saved in RANKID_output.json
+[OUTPUT] 2025-08-14T13:59:34.455956 outputs saved in RANKID_output.json

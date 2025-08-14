@@ -1,0 +1,36 @@
+workload:
+  model:
+    name: unet3d
+    type: cnn
+    model_size: 499153191
+  framework: pytorch
+  workflow:
+    generate_data: true
+    train: false
+    checkpoint: true
+  dataset:
+    data_folder: /p/lustre5/haridev/dlio_demo/unet3d_a100/data
+    format: npz
+    num_files_train: 32
+    num_samples_per_file: 1
+    record_length_bytes: 1048576
+    record_length_bytes_stdev: 68341808
+    record_length_bytes_resize: 2097152
+  reader:
+    data_loader: pytorch
+    batch_size: 7
+    read_threads: 4
+    file_shuffle: seed
+    sample_shuffle: seed
+  train:
+    epochs: 1
+    computation_time: 0.636
+    batch_size: 1
+  checkpoint:
+    checkpoint_folder: /p/lustre5/haridev/dlio_demo/unet3d_a100/checkpoint
+    checkpoint_after_epoch: 5
+    epochs_between_checkpoints: 2
+  metric:
+    au: 0.9
+  output:
+    folder: /usr/WS2/haridev/dftracer-demo/output/dlio/unet3d_a100-gen/
