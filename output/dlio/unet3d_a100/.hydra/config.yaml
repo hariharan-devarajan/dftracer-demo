@@ -5,7 +5,7 @@ workload:
     model_size: 499153191
   framework: pytorch
   workflow:
-    generate_data: true
+    generate_data: false
     train: true
     checkpoint: true
   dataset:
@@ -25,6 +25,7 @@ workload:
   train:
     epochs: 1
     computation_time: 0.636
+    batch_size: 1
   checkpoint:
     checkpoint_folder: /p/lustre5/haridev/dlio_demo/unet3d_a100/checkpoint
     checkpoint_after_epoch: 5

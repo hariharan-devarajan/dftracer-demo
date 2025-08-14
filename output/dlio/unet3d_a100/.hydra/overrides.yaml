@@ -1,9 +1,9 @@
 - workload=unet3d_a100
-- ++workload.workflow.generate_data=True
 - ++workload.output.folder=/usr/WS2/haridev/dftracer-demo/output/dlio/unet3d_a100/
 - ++workload.output.folder=/usr/WS2/haridev/dftracer-demo/output/dlio/unet3d_a100/
 - ++workload.dataset.num_files_train=32
 - ++workload.dataset.record_length_bytes=1048576
 - ++workload.dataset.data_folder=/p/lustre5/haridev/dlio_demo/unet3d_a100/data
 - ++workload.checkpoint.checkpoint_folder=/p/lustre5/haridev/dlio_demo/unet3d_a100/checkpoint
+- ++workload.train.batch_size=1
 - ++workload.train.epochs=1
