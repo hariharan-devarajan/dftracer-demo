@@ -1,8 +1,8 @@
-[OUTPUT] 2025-08-14T13:56:37.310816 Running DLIO [Generating data & Checkpointing] with 1 process(es)
-[OUTPUT] 2025-08-14T13:56:37.354851 Starting data generation
-[OUTPUT] 2025-08-14T13:57:07.885614 Generation done
-[OUTPUT] 2025-08-14T13:57:07.953282 Model size: 0.000010 GB 
-[OUTPUT] 2025-08-14T13:57:07.953475 Total checkpoint size: 0.000010 GB 
+[OUTPUT] 2025-08-15T23:24:06.917096 Running DLIO [Generating data & Checkpointing] with 1 process(es)
+[OUTPUT] 2025-08-15T23:24:06.948556 Starting data generation
+[OUTPUT] 2025-08-15T23:24:32.859142 Generation done
+[OUTPUT] 2025-08-15T23:24:32.926435 Model size: 0.000010 GB 
+[OUTPUT] 2025-08-15T23:24:32.926516 Total checkpoint size: 0.000010 GB 
 /usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3464: RuntimeWarning: Mean of empty slice.
   return _methods._mean(a, axis=axis, dtype=dtype,
 /usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/numpy/core/_methods.py:192: RuntimeWarning: invalid value encountered in scalar divide
@@ -13,10 +13,10 @@
   arrmean = um.true_divide(arrmean, div, out=arrmean,
 /usr/WS2/haridev/dftracer-demo/install/lib/python3.11/site-packages/numpy/core/_methods.py:261: RuntimeWarning: invalid value encountered in scalar divide
   ret = ret.dtype.type(ret / rcount)
-[OUTPUT] 2025-08-14T13:57:07.962723 Saved outputs in /usr/WS2/haridev/dftracer-demo/output/dlio/unet3d_a100-gen/
+[OUTPUT] 2025-08-15T23:24:32.935668 Saved outputs in /usr/WS2/haridev/dftracer-demo/output/dlio/unet3d_a100-gen/
 [OUTPUT] Averaged metric over all steps/epochs
 [METRIC] ==========================================================
 [METRIC] Number of Simulated Accelerators: 1 
 [METRIC] ==========================================================
 
-[OUTPUT] 2025-08-14T13:57:07.967132 outputs saved in RANKID_output.json
+[OUTPUT] 2025-08-15T23:24:32.940157 outputs saved in RANKID_output.json

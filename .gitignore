@@ -212,3 +212,8 @@ install
 *.core
 demo/dlio/outputs
 demo/ior/outputs
+logs/ior/*.pfw.gz*
+output/dlio/unet3d_a100/*.json
+output/dlio/unet3d_a100/*.pfw.gz*
+output/dlio/unet3d_a100-gen/*.json
+output/dlio/unet3d_a100-gen/*.pfw.gz*
