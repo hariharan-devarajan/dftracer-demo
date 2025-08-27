@@ -14,7 +14,7 @@ workload:
     num_files_train: 32
     num_samples_per_file: 1
     record_length_bytes: 1048576
-    record_length_bytes_stdev: 68341808
+    record_length_bytes_stdev: 0
     record_length_bytes_resize: 2097152
   reader:
     data_loader: pytorch
