@@ -4,6 +4,27 @@ A demo to run dftracer with different workloads.
 
 ## Getting Started
 
+### Option 1: Docker Development Container (Recommended)
+
+The easiest way to get started is using the Docker development container:
+
+1. **Prerequisites**: Install [Docker](https://docs.docker.com/get-docker/) and [VS Code](https://code.visualstudio.com/) with the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+
+2. **Open in VS Code**: Open this project in VS Code
+
+3. **Start Dev Container**: Use Command Palette (`Cmd+Shift+P`) → "Dev Containers: Reopen in Container"
+
+4. **Launch Jupyter**: Once the container is ready, run:
+   ```bash
+   jupyter lab
+   ```
+
+5. **Access Jupyter Lab**: Open <http://localhost:8888> in your browser
+
+📖 **For detailed Docker setup instructions, see [.devcontainer/README.md](.devcontainer/README.md)**
+
+### Option 2: Local Installation
+
 1. **Setup the environment**:
 
    ```bash

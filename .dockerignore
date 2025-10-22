@@ -1,0 +1,31 @@
+# Exclude large directories
+output/
+logs/
+install/
+software/
+data/
+
+# Exclude git and system files
+.git/
+.DS_Store
+*.log
+
+# Exclude Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Exclude temporary files
+*.tmp
+*.temp
+.pytest_cache/
+
+# Exclude IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Exclude OS files
+Thumbs.db
+.directory
