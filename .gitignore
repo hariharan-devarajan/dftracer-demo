@@ -217,3 +217,4 @@ output/dlio/unet3d_a100/*.json
 output/dlio/unet3d_a100/*.pfw.gz*
 output/dlio/unet3d_a100-gen/*.json
 output/dlio/unet3d_a100-gen/*.pfw.gz*
+logs/ior/compact/ior-1.pfw.gz
