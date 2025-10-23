@@ -1,5 +1,6 @@
 setuptools<70.0.0
 wheel
 git+https://github.com/argonne-lcf/dlio_benchmark.git@refs/pull/302/head
-dftracer[dfanalyzer] @ git+https://github.com/LLNL/dftracer.git@refs/pull/324/head
+dftracer==2.0.2
+dftracer-analyzer==0.0.3
 jupyter
