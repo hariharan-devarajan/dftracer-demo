@@ -213,10 +213,10 @@ install
 demo/dlio/outputs
 demo/ior/outputs
 logs/ior/*.pfw.gz*
-output/dlio/unet3d_a100/*.json
-output/dlio/unet3d_a100/*.pfw.gz*
-output/dlio/unet3d_a100-gen/*.json
-output/dlio/unet3d_a100-gen/*.pfw.gz*
+output/dlio/unet3d_a100*/*.json
+output/dlio/unet3d_a100*/*.pfw.gz*
+output/dlio/unet3d_a100-gen*/*.json
+output/dlio/unet3d_a100-gen*/*.pfw.gz*
 logs/ior/compact/ior-1.pfw.gz
 *.idx
 *.csv
@@ -226,3 +226,10 @@ _flat*
 _raw_*
 *.txt
 .hydra
+
+# Demo Files
+data
+software/sqlite*
+checkpoints
+*.pfw.gz
+*.idx
