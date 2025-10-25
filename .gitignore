@@ -233,3 +233,7 @@ software/sqlite*
 checkpoints
 *.pfw.gz
 *.idx
+*nfs*
+*.err
+*.out
+*.json

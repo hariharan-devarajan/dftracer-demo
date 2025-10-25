@@ -6,6 +6,11 @@ log() {
     echo "$(date '+%Y-%m-%d %H:%M:%S') - $1"
 }
 
+rm setup.log
+
+# Redirect all output to both stdout and setup.log
+exec > >(tee -a setup.log) 2>&1
+
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 log "Current script directory: $SCRIPT_DIR"
 
@@ -31,8 +36,8 @@ fi
 cd software/ior
 ./bootstrap
 ./configure --prefix=${SCRIPT_DIR}/install
-make
-make install
+make -j
+make install -j
 cd -
 
 log "Checking SQLite version..."
@@ -63,8 +68,12 @@ version_compare() {
     return 0
 }
 
+set +e  # Temporarily disable exit on error for version comparison
 version_compare $SQLITE_VERSION $REQUIRED_VERSION
-case $? in
+val=$?
+set -e  # Re-enable exit on error
+is_custom_sqlite=0
+case $val in
     0) log "SQLite version $SQLITE_VERSION is equal to required version $REQUIRED_VERSION" ;;
     1) log "SQLite version $SQLITE_VERSION is greater than required version $REQUIRED_VERSION" ;;
     2) 
@@ -90,22 +99,25 @@ case $? in
         log "Installing SQLite..."
         make install -j
         cd -
+        is_custom_sqlite=1
         
         log "SQLite installation completed"
         ;;
 esac
 
-log "Building and installing DLIO benchmark..."
-if [ ! -d "${SCRIPT_DIR}/software/dlio_benchmark" ]; then
-    log "Cloning DLIO benchmark repository..."
-    git clone https://github.com/argonne-lcf/dlio_benchmark.git "${SCRIPT_DIR}/software/dlio_benchmark"
-fi
-
+cd $SCRIPT_DIR
 log "Activating Python virtual environment..."
 source ./install/bin/activate
 
+export CMAKE_PREFIX_PATH=${SCRIPT_DIR}/install:$CMAKE_PREFIX_PATH
 
 log "Installing Python requirements..."
-pip install --no-binary "mpi4py" -r requirements.txt
+pip install --no-binary="mpi4py" --no-binary="dftracer-utils" -v -r requirements.txt
+
+if [ $is_custom_sqlite -eq 1 ]; then
+    log "Reinstalling dftracer-utils to link against the custom SQLite installation..."
+    pip uninstall -y dftracer-utils
+    pip install --no-binary="dftracer-utils" --no-cache-dir -v dftracer-utils==0.0.5
+fi
 
 log "Setup completed successfully."
