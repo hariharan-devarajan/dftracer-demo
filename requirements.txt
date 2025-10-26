@@ -1,7 +1,7 @@
 setuptools<70.0.0
 wheel
-git+https://github.com/argonne-lcf/dlio_benchmark.git@a6aa38c1fa06e9be0728875c12c87eb7ed4c2958
+git+https://github.com/argonne-lcf/dlio_benchmark.git@v2.0.1
 dftracer==2.0.2
-dftracer-analyzer==0.0.4
+dftracer-analyzer==0.0.5
 jupyter
 mpi4py
